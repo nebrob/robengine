@@ -14,8 +14,8 @@ esbuild.build({
     sourcemap: isDev ? "external" : false,
     watch: enableWatch ? {
         onRebuild(error, result) {
-            if (error) console.error('watch build failed:', error)
-            else console.log('watch build succeeded:', result)
+            if (error) console.error('watch build failed')
+            else console.log('watch build succeeded')
         },
     } : false,
     target: isDev ? ["esnext"] : ["es2020", "chrome58", "firefox57", "safari11", "edge16"],
