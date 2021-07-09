@@ -1,0 +1,18 @@
+{
+  "name": "robengine",
+  "version": "1.0.0",
+  "description": "3D Game engine powered by ThreeJS",
+  "main": "dist/index.js",
+  "type": "module",
+  "repository": "https://github.com/nebrob/robengine",
+  "author": "nebrob <benjamin@benrbnt.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "node esbuild.config.js",
+    "dev": "node esbuild.config.js dev",
+    "watch": "node esbuild.config.js dev watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.12.15"
+  }
+}
